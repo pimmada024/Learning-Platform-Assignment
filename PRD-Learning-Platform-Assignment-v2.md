@@ -274,8 +274,8 @@ Since the frontend has no direct Firestore access (Section 9), ownership checks 
 ### MVP is complete when:
 
 - [ ] Instructors can sign up, log in, create a Cohort, and create an Assignment with a due date and criteria.
-- [ ] The 3 core screens (Login, Dashboard, Create/Edit Assignment) are implemented and functional.
-- [ ] Instructors can view, edit, and delete their own Cohorts and Assignments from the Dashboard.
+- [ ] The 3 core screens (Login, Home, Create/Edit Assignment) are implemented and functional.
+- [ ] Instructors can view, edit, and delete their own Cohorts and Assignments from the Home.
 - [ ] At least 6 REST API operations are implemented and documented in a shared contract (OpenAPI or equivalent), and every operation requires authentication.
 - [ ] At least 7 automated tests cover essential paths (auth, Cohort/Assignment CRUD, and security-rule enforcement for cross-instructor isolation).
 - [ ] Firestore/Storage Security Rules prevent one Instructor from reading/writing another Instructor's data (verified by tests).
@@ -289,7 +289,7 @@ Since the frontend has no direct Firestore access (Section 9), ownership checks 
 - **Inter-team webhook integration**, including an AI-assisted summary step with a deterministic fallback, for notifying other systems when an Assignment is created — deferred out of MVP.
 - **Student accounts, self-enrollment (via join code), and a full submission workflow** (file upload, tracking, instructor review) — this was part of the original data model concept but is deferred out of MVP now that Instructors are the sole target user.
 - Notification system (email/push) for upcoming due dates.
-- Instructor gradebook/analytics dashboard.
+- Instructor gradebook/analytics Home.
 - Native mobile app.
 - Plagiarism detection integration.
 - In-app messaging between instructors and students (replacing WhatsApp/Discord use).
